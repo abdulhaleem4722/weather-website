@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="scene">
+        <div class="container">
+            <div class="card">
+                <div class="card-front">
+                    <div class="search-box">
+                        <input type="text" placeholder="Enter city name" id="cityInput">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="weather-box">
+                        <div class="weather-details">
+                            <div class="weather">
+                                <div class="weather-icon-container">
+                                    <img src="" alt="weather icon" class="weather-icon">
+                                </div>
+                                <div class="info-container">
+                                    <h1 class="temp"></h1>
+                                    <h2 class="city"></h2>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="col">
+                                    <div class="icon-container">
+                                        <i class="fa-solid fa-water"></i>
+                                    </div>
+                                    <div>
+                                        <p class="humidity"></p>
+                                        <p>Humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="icon-container">
+                                        <i class="fa-solid fa-wind"></i>
+                                    </div>
+                                    <div>
+                                        <p class="wind"></p>
+                                        <p>Wind Speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="not-found">
+                            <div class="error-container">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4370/4370758.png" alt="404">
+                                <p>Oops! City not found.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
